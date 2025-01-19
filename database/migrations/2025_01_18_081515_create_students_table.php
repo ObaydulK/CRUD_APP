@@ -14,13 +14,15 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('image')->nullable();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phone');
-            $table->enum('class', ['Nursary','Play', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight','nine', 'ten']);
-            $table->enum('gender',['Male', 'Female', 'Other']);
-            $table->text('bio')->nullable();
+            $table->string('Image')->nullable();
+            $table->string('Name')->nullable();
+            $table->string('Email')->nullable();
+            $table->string('Phone');
+            $table->string('Address');
+            $table->string('City'); 
+            $table->string('Class');
+            $table->string('Gender');
+            $table->text('Bio')->nullable();
             $table->timestamps();
         });
     }
