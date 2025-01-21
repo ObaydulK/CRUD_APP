@@ -82,7 +82,7 @@
                   <span class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-neutral-200">
                     Bio
                   </span>
-                </th> 
+                </th>
                 <th scope="col" class="px-6 py-3 text-start whitespace-nowrap">
                   <span class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-neutral-200">
                     Update Date
@@ -97,56 +97,61 @@
               </tr>
             </thead>
             @foreach ($students as $student)
-        <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-          <tr>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <button type="button"
-            class="flex items-center gap-x-2 text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400">
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polygon
-              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-            <span class="text-sm text-gray-800 dark:text-neutral-200"> </span>
-            </button>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <div class="flex items-center gap-x-3">
-            <span class="text-xs text-gray-500 dark:text-neutral-500">{{$student->Name}}</span>
-            </div>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->Email}}</span>
-          </td> 
-          <td class="h-px w-72 whitespace-nowrap">
-            <span class="text-sm text-red-500">{{$student->Phone}}</span>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->Address}}</span>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->City}}</span>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->Class}}</span>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->Gender}}</span>
-          </td>
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->Bio}}</span>
-          </td> 
-          <td class="size-px whitespace-nowrap px-6 py-3">
-            <span class="text-sm text-gray-800 dark:text-white">{{$student->updated_at}}</span>
-          </td>
-          <td>
-            <a href="">Delete</a>
-            <a href="">Edit</a>
-          </td>
-          </tr>
-        </tbody>
-      @endforeach
+                  <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
+                    <tr>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <button type="button"
+                      class="flex items-center gap-x-2 text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400">
+                      <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                      <span class="text-sm text-gray-800 dark:text-neutral-200"> </span>
+                      </button>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <div class="flex items-center gap-x-3">
+                      <span class="text-xs text-gray-500 dark:text-neutral-500">{{$student->Name}}</span>
+                      </div>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->Email}}</span>
+                    </td>
+                    <td class="h-px w-72 whitespace-nowrap">
+                      <span class="text-sm text-red-500">{{$student->Phone}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->Address}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->City}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->Class}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->Gender}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->Bio}}</span>
+                    </td>
+                    <td class="size-px whitespace-nowrap px-6 py-3">
+                      <span class="text-sm text-gray-800 dark:text-white">{{$student->updated_at}}</span>
+                    </td>
+                    <td>
+                      <a href="">Edit</a>
+                      <form action="{{route('student.destroy', $student->id)}}" method="post">
+                      @csrf
+                      @method('DELETE')
+
+                      <button type="submit">Delete</button>
+                      </form>
+                    </td>
+                    </tr>
+                  </tbody>
+                @endforeach
           </table>
           <!-- End Table -->
         </div>
